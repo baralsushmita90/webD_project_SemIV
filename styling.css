@@ -22,6 +22,11 @@
 {
 	height: 600px;
 	border: 1px solid blue;
+                 background-color: aliceblue;
+        	border-style: dashed;
+	 border-width: 3px;
+	border-radius: 5px;
+	border-color : cornflowerblue;
 }
 
 #footer
@@ -88,11 +93,4 @@ box-shadow: 0px 0px 10px black;
 	position:relative;
 
 
-}
-.col-md-3{
-background-color: aliceblue;
-border-style: dashed;
- border-width: 3px;
-border-radius: 5px;
-border-color : cornflowerblue;
 }
