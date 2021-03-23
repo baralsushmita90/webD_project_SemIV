@@ -1,6 +1,6 @@
 .container-fluid
 {
-	height: 1370px;
+	height: 1500px;
 }
 
 
@@ -27,7 +27,7 @@
 #footer
 {
 	border: 1px solid black;
-	height: 250px;
+	height: 280px;
 }
 
 .col-md-8
