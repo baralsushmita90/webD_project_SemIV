@@ -106,7 +106,7 @@ box-shadow: 0px 0px 10px black;
 	border: none;
 	margin-left: -1%;
 	background-color: white;
-	/*border: 1px solid green*/
+	/*border: 1px solid green;*/
 }
 
 #abt-us
@@ -135,4 +135,26 @@ box-shadow: 0px 0px 10px black;
 	display: inline;
 	position: absolute;
 	margin: -6% 10%;
+}
+
+#pages
+{
+	/*border: 1px solid brown;*/
+	float: left;
+	height: 275px;
+	margin-left: 1%;
+}
+
+#contact-form
+{
+	border: 1px solid purple;
+	float: left;
+	height: 275px;
+	margin-left: 1%;
+	background-color: white;
+}
+
+.navigate-items
+{
+	margin: 6% 0;
 }
