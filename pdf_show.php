@@ -22,14 +22,14 @@ $id = $_GET['id'];
 
 	$id = $_GET['id'];
 
-	$sql = mysqli_query($conn, "SELECT pdf_link FROM sem1_notes WHERE code='$id'");
+	$sql = mysqli_query($conn, "SELECT pdf_name FROM sem1_notes WHERE code='$id'");
 
 	$result = mysqli_fetch_array($sql);
 
-	echo $result['pdf_link']; 
+	//echo $result['pdf_name']; 
 	?>
 
-	<embed src="<?php echo $result['pdf_link']; ?>" width="500" height="375" type="application/pdf">
+	<embed src="pdf_docs/<?php echo $result['pdf_name'];?>" style = "margin-left: 10%;" width="1200" height="730" type="application/pdf">
 
 </body>
 </html>
