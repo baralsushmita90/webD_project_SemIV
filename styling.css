@@ -40,6 +40,11 @@
 	border: 1px solid purple;
 	float: right;
 	margin: 0 2%;
+display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
 }
 
 .gallery_container{
@@ -200,7 +205,7 @@ box-shadow: 0px 0px 10px black;
 /* Style the back side */
 .flip-card-back {
 width: 300px;
-  height: 300px;
+  height: 350px;
   background-color: lightblue;
   color: white;
   transform: rotateY(180deg);
