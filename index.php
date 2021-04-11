@@ -300,7 +300,7 @@ $conn->close();
 
                         		<div class="md-form mb-0">
                             		<label for="email" class=""><b>Enter Email</b></label>
-                            		<input type="text" id="email" name="email" class="form-control" required>
+                            		<input type="text" id="email" name="email" class="form-control" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                         		</div>
 
                         		<br>
