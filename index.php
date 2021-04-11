@@ -6,6 +6,38 @@ $conn->close();
  ?>
 
 
+ <?php
+
+ 	include('db_conn.php');
+ 	if(isset($_POST['send']))
+ 	{
+ 		// echo "<script> window.location.href = 'https://github.com/riyagoel192/webD_project_SemIV';</script>";
+ 		$name = $_POST['name'];
+ 		$email = $_POST['email'];
+ 		$url= $_POST['url'];
+ 		$upload= $_POST['upload'];
+
+ 		// if(empty($url))
+ 		// {
+ 		// 	// echo "URL empty";
+ 		// }
+
+ 		$sql = "INSERT INTO contact_form VALUES('$name','$email','$url','$upload')";
+
+ 		if(mysqli_query($conn, $sql))
+ 		{
+ 			// echo "values inserted successfully";
+ 		}
+ 		else
+ 		{
+ 			// echo "values not inserted successfully";
+ 		}
+
+ 	}
+
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -252,26 +284,52 @@ $conn->close();
         					</div>
         				<div class="modal-body">
           					<!-- <p>Some text in the modal.</p> -->
-          					<form>
+          					<form method="POST" action="index.php">
           						<!--Grid row-->
                 				<div class="row">
 
                     			<!--Grid column-->
-                    			<div class="col-md-6">
+                    			<div class="col-md-12" style="border: none;">
+
                         		<div class="md-form mb-0">
-                            		<label for="name" class="">Your name</label>
-                            		<input type="text" id="name" name="name" class="form-control">
+                            		<label for="name" class=""><b>Enter Name</b></label>
+                            		<input type="text" id="name" name="name" class="form-control" required>
                         		</div>
+
+                        		<br>
+
+                        		<div class="md-form mb-0">
+                            		<label for="email" class=""><b>Enter Email</b></label>
+                            		<input type="text" id="email" name="email" class="form-control" required>
+                        		</div>
+
+                        		<br>
+
+                        		<div class="md-form mb-0">
+                            		<label for="upload" class=""><b>Enter URL (if any)</b></label>
+                            		<input type="text" id="url" name="url" class="form-control">
+                        		</div>
+
+                        		<br>
+
+                        		<div class="md-form mb-0">
+                            		<label for="upload" class=""><b>Upload attachment (if any)</b></label>
+                            		<input type="text" id="upload" name="upload" class="form-control">
+                        		</div>
+
                     			</div>
                     			<!--Grid column-->
 
                     			</div>
+
+                    			<br>
+                    			<input type="submit" class="btn btn-success" id="send" name="send" value="SEND INFORMATION">
                     			<!-- End of Grid row -->
 
           					</form>
         				</div>
         				<div class="modal-footer">
-          					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         				</div>
       					</div>
 
