@@ -211,3 +211,9 @@ width: 300px;
   color: white;
   transform: rotateY(180deg);
 }
+
+.form-icons
+{
+	position: absolute;
+	margin-left: 1%;
+}

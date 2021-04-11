@@ -269,7 +269,9 @@ $conn->close();
 						<div class="col-md-4" style="height: 60px;"></div>
 
 						<div class="col-md-4">
-						<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">CONTACT US</button>
+						<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">CONTACT US
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+						</button>
 						</div>
 
 						<!-- Modal -->
@@ -293,6 +295,7 @@ $conn->close();
 
                         		<div class="md-form mb-0">
                             		<label for="name" class=""><b>Enter Name</b></label>
+                            		<span class="form-icons"><i class="fa fa-user" aria-hidden="true"></i></span>
                             		<input type="text" id="name" name="name" class="form-control" required>
                         		</div>
 
@@ -300,6 +303,7 @@ $conn->close();
 
                         		<div class="md-form mb-0">
                             		<label for="email" class=""><b>Enter Email</b></label>
+                            		<span class="form-icons"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                             		<input type="text" id="email" name="email" class="form-control" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                         		</div>
 
@@ -307,6 +311,7 @@ $conn->close();
 
                         		<div class="md-form mb-0">
                             		<label for="upload" class=""><b>Enter URL (if any)</b></label>
+                            		<span class="form-icons"><i class="fa fa-link" aria-hidden="true"></i></span>
                             		<input type="text" id="url" name="url" class="form-control">
                         		</div>
 
@@ -314,6 +319,7 @@ $conn->close();
 
                         		<div class="md-form mb-0">
                             		<label for="upload" class=""><b>Upload attachment (if any)</b></label>
+                            		<span class="form-icons"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
                             		<input type="text" id="upload" name="upload" class="form-control">
                         		</div>
 
