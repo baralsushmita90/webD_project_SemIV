@@ -139,56 +139,123 @@ $conn->close();
 
 			<div class="col-md-8">
 
-				<div class="flip-card">
+                   <div class="grid-container">
+                   	<div class="grid-item item-1">
+                   		<div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="images/notes.png" alt="Avatar" style="width:300px;height:350px;">
+      <img src="images/notes.png" alt="Avatar" style="width:100%;height:100%;">
     </div>
     <div class="flip-card-back">
-      <h2>MCA NOTES</h2>
-      <h3><a href="semI_notes.php?id=1">Sem I</a></h3>
-      <h3><a href="semI_notes.php?id=2">Sem II</a></h3>
-      <h3><a href="semI_notes.php?id=3">Sem III</a></h3>
-      <h3><a href="semI_notes.php?id=4">Sem IV</a></h3>
-      <h3><a href="semI_notes.php?id=5">Sem V</a></h3>
-      <h3><a href="semI_notes.php?id=6">Sem VI</a></h3>
-    </div>
-  </div>
-</div>
+      <h1>Notes</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/pq.jpg" alt="Avatar" style="width:300px;height:350px;">
-    </div>
-    <div class="flip-card-back">
-      <h2>Previous Years Question Papers</h2>
-      <h3><a href="semI_notes.php?id=1">Sem I</a></h3>
-      <h3><a href="semI_notes.php?id=2">Sem II</a></h3>
-      <h3><a href="semI_notes.php?id=3">Sem III</a></h3>
-      <h3><a href="semI_notes.php?id=4">Sem IV</a></h3>
-      <h3><a href="semI_notes.php?id=5">Sem V</a></h3>
-      <h3><a href="semI_notes.php?id=6">Sem VI</a></h3>
     </div>
   </div>
 </div>
+                   	</div>
+                   	<div class="grid-item item-2">
+                   		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/syllabus.jpg" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Syllabus</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/pdf.png" alt="Avatar" style="width:300px;height:350px;">
-    </div>
-    <div class="flip-card-back">
-      <h2>Books</h2>
-      <h3><a href="semI_notes.php?id=1">Sem I</a></h3>
-      <h3><a href="semI_notes.php?id=2">Sem II</a></h3>
-      <h3><a href="semI_notes.php?id=3">Sem III</a></h3>
-      <h3><a href="semI_notes.php?id=4">Sem IV</a></h3>
-      <h3><a href="semI_notes.php?id=5">Sem V</a></h3>
-      <h3><a href="semI_notes.php?id=6">Sem VI</a></h3>
     </div>
   </div>
 </div>
+                   	</div>
+                   	<div class="grid-item item-3">
+                   		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/projects.png" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Project Ideas</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+
+    </div>
+  </div>
+</div>
+                   	</div>
+                   	<div class="grid-item item-4">
+                   		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/pdf.png" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Notes</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+
+    </div>
+  </div>
+</div>
+                   	</div>
+                   	<div class="grid-item item-5">
+                   		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/pq.jpg" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Previous Year</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+
+    </div>
+  </div>
+</div>
+                   	</div>
+                   	<div class="grid-item item-6">
+                   		<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/previous year.jpg" alt="Avatar" style="width:100%;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Notes</h1>
+      <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+      <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+
+    </div>
+  </div>
+</div>
+                   	</div>
+                   </div>
+   				
 
 			</div>
 
