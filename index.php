@@ -139,7 +139,108 @@ $conn->close();
 
 			<div class="col-md-8">
 
-                   <div class="grid-container">
+				<div class="container-fluid" style="height: 100%;width: 1000px; margin: 0px 0px;">
+					
+					<div class="row" style="height: 50%;width: 1000px;">
+						
+            <div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+
+							<div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+
+						</div>
+
+						<div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+							
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+
+						</div>
+
+						<div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+							
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+						</div>
+
+					</div>
+
+					<div class="row" style="height: 50%;width: 1000px;">
+
+						<div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+							
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+
+						</div>
+
+						<div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+							
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+
+						</div>
+
+						<div class="col-md-4" style="border: 1px solid blue;margin: 1% 0%;">
+							
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/notes.png" alt="Avatar" style="width:100px;height:100px;">
+                        </div>
+                  <div class="flip-card-back">
+                        <p>Notes</p>
+                  </div>
+                  </div>
+              </div>
+
+						</div>
+					
+          </div>
+
+				</div>
+
+<!--                    <div class="grid-container">
                    	<div class="grid-item item-1">
                    		<div class="flip-card">
   <div class="flip-card-inner">
@@ -254,7 +355,7 @@ $conn->close();
   </div>
 </div>
                    	</div>
-                   </div>
+                   </div> -->
    				
 
 			</div>
