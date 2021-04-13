@@ -26,12 +26,23 @@ $conn->close();
 
  		if(mysqli_query($conn, $sql))
  		{
- 			// echo "values inserted successfully";
+ 			 echo "values inserted successfully";
  		}
  		else
  		{
- 			// echo "values not inserted successfully";
+ 			 echo "values not inserted successfully";
+       $error =mysqli_error($conn);
+       echo $error;
  		}
+    $subject = "Content Submitted";
+     $body = "Hi $name,\nThankyou so much for submitting your content \nFrom \nTeam Studymate";
+    $headers = "From: STUDYMATE";
+
+if (mail($email, $subject, $body, $headers)) {
+    echo "Email successfully sent to $email...";
+} else {
+    echo "Email sending failed...";
+}
 
  	}
 
