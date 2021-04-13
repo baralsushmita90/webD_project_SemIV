@@ -22,14 +22,14 @@ $id = $_GET['id'];
 
 	$id = $_GET['id'];
 
-	$sql = mysqli_query($conn, "SELECT pdf_name FROM sem1_notes WHERE code='$id'");
+	$sql = mysqli_query($conn, "SELECT syllabus_pdf FROM sem1_notes WHERE code='$id'");
 
 	$result = mysqli_fetch_array($sql);
 
 	//echo $result['pdf_name']; 
 	?>
 
-	<embed src="pdf_docs/<?php echo $result['pdf_name'];?>" style = "margin-left: 10%;" width="1200" height="730" type="application/pdf">
+	<embed src="syllabus_pdf_docs/<?php echo $result['syllabus_pdf'];?>" style = "margin-left: 10%;" width="1200" height="730" type="application/pdf">
 
 </body>
 </html>

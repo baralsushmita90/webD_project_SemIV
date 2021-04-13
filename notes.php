@@ -5,8 +5,19 @@ include('db_conn.php');
 $id = $_GET['id'];
 $sql = "SELECT * FROM sem1_notes WHERE id = $id"; 
 $result = $conn->query($sql); 
-$conn->close(); 
-
+// if(mysqli_num_rows($result)>0)
+// {
+// 		echo "<script>table.style.display=visible</script>";
+// }
+// if(mysqli_num_rows($result)>0)
+// {
+	// echo "string";
+	
+	// <!-- <script language="javascript">
+	// 	document.getElementById("show-table").style.display="block";
+	// </script>
+ // -->
+	$conn->close(); 
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +62,7 @@ $conn->close();
 
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>
-	<div style="overflow-x:auto;margin-top: 5%;">
+	<div id="show-table" style="overflow-x:auto;margin-top: 5%;">
 	<table>
 	<tr>
 		<th>Subject Code</th>
@@ -67,7 +78,7 @@ $conn->close();
 
 	<tr>
       <td><?php echo $rows['code'];?></td>
-      <td><a href="pdf_show.php?id=<?php echo $code ?>"><?php echo $rows['title'];?></a></td>
+      <td><a href="notes_pdf.php?id=<?php echo $code ?>"><?php echo $rows['title'];?></a></td>
  	</tr>
 
 	<?php 
