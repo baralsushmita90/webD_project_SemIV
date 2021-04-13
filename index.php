@@ -520,7 +520,7 @@ if (mail($email, $subject, $body, $headers)) {
                         		<div class="md-form mb-0">
                             		<label for="email" class=""><b>Enter Email</b></label>
                             		<span class="form-icons"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            		<input type="text" id="email" name="email" class="form-control" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            		<input type="text" id="email" name="email" class="form-control" required>
                         		</div>
 
                         		<br>
@@ -544,7 +544,7 @@ if (mail($email, $subject, $body, $headers)) {
 
                     			</div>
 
-                    			<br>
+                    			<br><br><br>
                     			<input type="submit" class="btn btn-success" id="send" name="send" value="SEND INFORMATION">
                     			<!-- End of Grid row -->
 
