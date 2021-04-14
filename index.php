@@ -227,15 +227,6 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Project Ideas</h1>
                         </div>
                   <div class="flip-card-back">
-<<<<<<< HEAD
-
-                        <!-- <h4><a href="project.php?id=1"> Sem I </a></h4>
-=======
-                          <br>
-                        <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
->>>>>>> 9fbad2f1e89d099de0e659ad2a05951af3115739
-                        <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem III </a></h4> -->
                         <h4><a href="project_ideas.php">Click to View</a></h4>
                         <!-- <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4> -->
