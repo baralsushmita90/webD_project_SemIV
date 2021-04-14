@@ -164,10 +164,10 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Notes</h1>
                         </div>
                   <div class="flip-card-back">
-
+                        <br>
                         <?php
 
-                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE BOOKS_PDF!='NA' order by ID";
+                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE notes_pdf!='NA' order by ID";
                         $result = $conn->query($sql);
                         while($rows=$result->fetch_assoc())
                            {
@@ -197,7 +197,7 @@ if (mail($email, $subject, $body, $headers)) {
                             <h1>Syllabus</h1>
                         </div>
                   <div class="flip-card-back">
-
+                          <br>
                         <?php
 
                         $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE syllabus_pdf!='NA' order by ID";
@@ -228,7 +228,7 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Project Ideas</h1>
                         </div>
                   <div class="flip-card-back">
-
+                          <br>
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
@@ -253,6 +253,7 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Previous Year</h1>
                         </div>
                   <div class="flip-card-back">
+                    <br>
 
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
@@ -275,7 +276,7 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Books</h1>
                         </div>
                   <div class="flip-card-back">
-
+                         <br>
                       <?php
 
                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE books_pdf!='NA' order by ID";
@@ -303,7 +304,7 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Practical</h1>
                         </div>
                   <div class="flip-card-back">
-
+                         <br>
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
