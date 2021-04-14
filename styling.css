@@ -67,7 +67,7 @@
 	height:600px;
 	margin: 0  auto;
 	box-shadow: 0px 0px 3px 1px #00000078;
-	
+
 	overflow: hidden;
      user-select: none;
 	box-sizing: border-box;
@@ -159,6 +159,7 @@ box-shadow: 0px 0px 10px black;
   background-color: lightblue;
   color: white;
   transform: rotateY(180deg);
+	
 }
 
 #map-div
