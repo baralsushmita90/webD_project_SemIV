@@ -34,7 +34,7 @@ $result = $conn->query($sql);
        $error =mysqli_error($conn);
        echo $error;
  		}
-    
+
     $subject = "Content Submitted";
      $body = "Hi $name,\nThankyou so much for submitting your content \nFrom \nTeam Studymate";
     $headers = "From: STUDYMATE";
@@ -173,7 +173,8 @@ if (mail($email, $subject, $body, $headers)) {
                         while($rows=$result->fetch_assoc())
                            {
                              $id=$rows['ID'];
-                            $url="notes.php?id=".$id;
+                             $url="table.php?id=".$id."& content=notes";
+
 
                               echo "<h4><a href='$url'> Sem-$id</a></h4>";
 
@@ -206,7 +207,7 @@ if (mail($email, $subject, $body, $headers)) {
                         while($rows=$result->fetch_assoc())
                            {
                              $id=$rows['ID'];
-                            $url="notes.php?id=".$id;
+                            $url="table.php?id=".$id."& content=syllabus";
 
                               echo "<h4><a href='$url'> Sem-$id</a></h4>";
 
@@ -285,7 +286,8 @@ if (mail($email, $subject, $body, $headers)) {
                       while($rows=$result->fetch_assoc())
                          {
                            $id=$rows['ID'];
-                           $url="notes.php?id=".$id;
+                           $url="table.php?id=".$id."& content=books";
+
 
                            echo "<h4><a href='$url'> Sem-$id</a></h4>";
                         }
