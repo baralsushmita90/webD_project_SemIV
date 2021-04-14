@@ -212,7 +212,7 @@ if (mail($email, $subject, $body, $headers)) {
                         while($rows=$result->fetch_assoc())
                            {
                              $id=$rows['ID'];
-                            $url="notes.php?id=".$id;
+                            $url="syllabus.php?id=".$id;
 
                               echo "<h4><a href='$url'> Sem-$id</a></h4>";
 
