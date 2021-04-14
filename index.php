@@ -34,6 +34,7 @@ $result = $conn->query($sql);
        $error =mysqli_error($conn);
        echo $error;
  		}
+    
     $subject = "Content Submitted";
      $body = "Hi $name,\nThankyou so much for submitting your content \nFrom \nTeam Studymate";
     $headers = "From: STUDYMATE";
