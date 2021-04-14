@@ -2,13 +2,13 @@
 include('db_conn.php');
 $sql = "SELECT * FROM notifications";
 $result = $conn->query($sql);
-$conn->close();
+
  ?>
 
 
  <?php
 
- 	include('db_conn.php');
+
  	if(isset($_POST['send']))
  	{
  		// echo "<script> window.location.href = 'https://github.com/riyagoel192/webD_project_SemIV';</script>";
@@ -153,24 +153,36 @@ if (mail($email, $subject, $body, $headers)) {
 			<div class="col-md-8">
 
 				<div class="container-fluid" style="height: 100%;width: 1000px; margin: 0px 0px;">
-					
+
 					<div class="row" style="height: 50%;width: 1000px;">
-						
+
             <div class="col-md-4" style="margin: 1% 0%;">
 
 							<div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/notes_img.jpg" alt="Avatar" style="width:100%;height:100%;">
+                              <h1>Notes</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Notes</h1>
-                        <h4><a href="notes.php?id=1"> Sem I </a></h4>
-                        <h4><a href="notes.php?id=2"> Sem II </a></h4>
-                        <h4><a href="notes.php?id=3"> Sem III </a></h4>
-                        <h4><a href="notes.php?id=4"> Sem IV</a></h4>
-                        <h4><a href="notes.php?id=5"> Sem V </a></h4>
-                        <h4><a href="notes.php?id=6"> Sem VI </a></h4>
+
+                        <?php
+
+                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE BOOKS_PDF!='NA' order by ID";
+                        $result = $conn->query($sql);
+                        while($rows=$result->fetch_assoc())
+                           {
+                             $id=$rows['ID'];
+                            $url="notes.php?id=".$id;
+
+                              echo "<h4><a href='$url'> Sem-$id</a></h4>";
+
+
+
+                           }
+                         ?>
+
+
                   </div>
                   </div>
               </div>
@@ -178,20 +190,30 @@ if (mail($email, $subject, $body, $headers)) {
 						</div>
 
 						<div class="col-md-4" style="margin: 1% 0%;">
-							
+
               <div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/syllabus.jpg" alt="Avatar" style="width:100%;height:100%;">
+                            <h1>Syllabus</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Syllabus</h1>
-                        <h4><a href="syllabus.php?id=1"> Sem I </a></h4>
-                        <h4><a href="syllabus.php?id=2"> Sem II </a></h4>
-                        <h4><a href="syllabus.php?id=3"> Sem III </a></h4>
-                        <h4><a href="syllabus.php?id=4"> Sem IV</a></h4>
-                        <h4><a href="syllabus.php?id=5"> Sem V </a></h4>
-                        <h4><a href="syllabus.php?id=6"> Sem VI </a></h4>
+
+                        <?php
+
+                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE syllabus_pdf!='NA' order by ID";
+                        $result = $conn->query($sql);
+                        while($rows=$result->fetch_assoc())
+                           {
+                             $id=$rows['ID'];
+                            $url="notes.php?id=".$id;
+
+                              echo "<h4><a href='$url'> Sem-$id</a></h4>";
+
+
+
+                           }
+                         ?>
                   </div>
                   </div>
               </div>
@@ -199,14 +221,15 @@ if (mail($email, $subject, $body, $headers)) {
 						</div>
 
 						<div class="col-md-4" style="margin: 1% 0%;">
-							
+
               <div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/project.jpg" alt="Avatar" style="width:100%;height:100%;">
+                              <h1>Project Ideas</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Project Ideas</h1>
+
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
@@ -223,14 +246,15 @@ if (mail($email, $subject, $body, $headers)) {
 					<div class="row" style="height: 50%;width: 1000px;">
 
 						<div class="col-md-4" style="margin: 1% 0%;">
-							
+
               <div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/previous_year.jpg" alt="Avatar" style="width:100%;height:100%;">
+                              <h1>Previous Year</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Previous Year</h1>
+
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
@@ -244,35 +268,43 @@ if (mail($email, $subject, $body, $headers)) {
 						</div>
 
 						<div class="col-md-4" style="margin: 1% 0%;">
-							
+
               <div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/books.jpg" alt="Avatar" style="width:100%;height:100%;">
+                              <h1>Books</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Books</h1>
-                        <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+
+                      <?php
+
+                       $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE books_pdf!='NA' order by ID";
+                       $result = $conn->query($sql);
+                      while($rows=$result->fetch_assoc())
+                         {
+                           $id=$rows['ID'];
+                           $url="notes.php?id=".$id;
+
+                           echo "<h4><a href='$url'> Sem-$id</a></h4>";
+                        }
+                     ?>
                   </div>
-                  </div>
+                </div>
               </div>
 
 						</div>
 
 						<div class="col-md-4" style="margin: 1% 0%;">
-							
+
               <div class="flip-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/practical.jpg" alt="Avatar" style="width:100%;height:100%;">
+                              <h1>Practical</h1>
                         </div>
                   <div class="flip-card-back">
-                        <h1>Practical</h1>
+
                         <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
@@ -284,7 +316,7 @@ if (mail($email, $subject, $body, $headers)) {
               </div>
 
 						</div>
-					
+
           </div>
 
 				</div>
@@ -405,7 +437,7 @@ if (mail($email, $subject, $body, $headers)) {
 </div>
                    	</div>
                    </div> -->
-   				
+
 
 			</div>
 
