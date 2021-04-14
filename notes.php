@@ -3,8 +3,9 @@
 include('db_conn.php');
 
 $id = $_GET['id'];
-$sql = "SELECT * FROM sem1_notes WHERE id = $id"; 
-$result = $conn->query($sql); 
+
+$sql = "SELECT * FROM sem1_notes WHERE id = $id";
+$result = $conn->query($sql);
 // if(mysqli_num_rows($result)>0)
 // {
 // 		echo "<script>table.style.display=visible</script>";
@@ -12,18 +13,18 @@ $result = $conn->query($sql);
 // if(mysqli_num_rows($result)>0)
 // {
 	// echo "string";
-	
+
 	// <!-- <script language="javascript">
 	// 	document.getElementById("show-table").style.display="block";
 	// </script>
  // -->
-	$conn->close(); 
+	$conn->close();
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	<title>MCA Notes</title>
 
 	<style>
@@ -70,8 +71,8 @@ $result = $conn->query($sql);
 	</tr>
 
 	<?php
-	while($rows=$result->fetch_assoc()) 
-    { 
+	while($rows=$result->fetch_assoc())
+    {
     	$code = $rows['code'];
  		// echo $code;
 	?>
@@ -81,8 +82,8 @@ $result = $conn->query($sql);
       <td><a href="notes_pdf.php?id=<?php echo $code ?>"><?php echo $rows['title'];?></a></td>
  	</tr>
 
-	<?php 
-    } 
+	<?php
+    }
     ?>
 
  	</table>
