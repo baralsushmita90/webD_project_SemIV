@@ -174,7 +174,8 @@ if (mail($email, $subject, $body, $headers)) {
                         <br>
                         <?php
 
-                        $sql = "SELECT DISTINCT ID FROM `sem1_notes` WHERE notes_pdf!='NA' order by ID";
+
+                        $sql = "SELECT DISTINCT id FROM `sem1_notes` WHERE notes_pdf!='NA' order by id";
                         $result = $conn->query($sql);
                         while($rows=$result->fetch_assoc())
                            {
@@ -182,9 +183,6 @@ if (mail($email, $subject, $body, $headers)) {
                             $url="notes.php?id=".$id;
 
                               echo "<h4><a href='$url'> Sem-$id</a></h4>";
-
-
-
                            }
                          ?>
 
@@ -235,13 +233,9 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Project Ideas</h1>
                         </div>
                   <div class="flip-card-back">
-                          <br>
-                        <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+                        <h4><a href="project_ideas.php">Click to View</a></h4>
+                        <!-- <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
+                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4> -->
                   </div>
                   </div>
               </div>
