@@ -15,14 +15,20 @@ $conn->close();
  		$name = $_POST['name'];
  		$email = $_POST['email'];
  		$url= $_POST['url'];
- 		$upload= $_POST['upload'];
+ 		// $upload= $_POST['upload'];
+    //$pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+    //file code started
+    $tname = $_FILES["file"]["tmp_name"];
+    $uploads_dir = 'notes_pdf_docs';
+    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
+    //file code ended
 
  		// if(empty($url))
  		// {
  		// 	// echo "URL empty";
  		// }
 
- 		$sql = "INSERT INTO contact_form VALUES('$name','$email','$url','$upload')";
+ 		$sql = "INSERT INTO contact_form VALUES('$name','$email','$url','$pname')";
 
  		if(mysqli_query($conn, $sql))
  		{
@@ -502,7 +508,7 @@ if (mail($email, $subject, $body, $headers)) {
         					</div>
         				<div class="modal-body">
           					<!-- <p>Some text in the modal.</p> -->
-          					<form method="POST" action="index.php">
+          					<form method="POST" action="index.php" enctype="multipart/form-data">
           						<!--Grid row-->
                 				<div class="row">
 
@@ -536,7 +542,9 @@ if (mail($email, $subject, $body, $headers)) {
                         		<div class="md-form mb-0">
                             		<label for="upload" class=""><b>Upload attachment (if any)</b></label>
                             		<span class="form-icons"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
-                            		<input type="text" id="upload" name="upload" class="form-control">
+                            		<!-- <input type="text" id="upload" name="upload" class="form-control"> -->
+                                <input type="file" id="file" name="file" class="form-control">
+                                
                         		</div>
 
                     			</div>
