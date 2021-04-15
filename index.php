@@ -15,14 +15,20 @@ $result = $conn->query($sql);
  		$name = $_POST['name'];
  		$email = $_POST['email'];
  		$url= $_POST['url'];
- 		$upload= $_POST['upload'];
+ 		//$upload= $_POST['upload'];
+
+   //upload code start
+    $tname = $_FILES["file"]["tmp_name"];
+    $uploads_dir = 'notes_pdf_docs';
+    move_uploaded_file($tname, $uploads_dir.'/'.$tname);
+    //upload code end
 
  		// if(empty($url))
  		// {
  		// 	// echo "URL empty";
  		// }
 
- 		$sql = "INSERT INTO contact_form VALUES('$name','$email','$url','$upload')";
+ 		$sql = "INSERT INTO contact_form VALUES('$name','$email','$url','$tname')";
 
  		if(mysqli_query($conn, $sql))
  		{
@@ -256,13 +262,29 @@ if (mail($email, $subject, $body, $headers)) {
                         </div>
                   <div class="flip-card-back">
                     <br>
+                       <?php
 
-                        <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
+                        $sql = "select DISTINCT ID from sem1_notes,papers where sem1_notes.code = papers.code order by ID";
+
+
+                        $result = $conn->query($sql);
+                        while($rows=$result->fetch_assoc())
+                           {
+                             $id=$rows['ID'];
+                            $url="table.php?id=".$id."& content=papers";
+
+                              echo "<h4><a href='$url'> Sem-$id</a></h4>";
+
+
+
+                           }
+                        ?>
+                        <!-- <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
                         <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
+                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4> -->
                   </div>
                   </div>
               </div>
@@ -572,7 +594,8 @@ if (mail($email, $subject, $body, $headers)) {
                         		<div class="md-form mb-0">
                             		<label for="upload" class=""><b>Upload attachment (if any)</b></label>
                             		<span class="form-icons"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
-                            		<input type="text" id="upload" name="upload" class="form-control">
+                            		<!-- <input type="text" id="upload" name="upload" class="form-control"> -->
+                                <input type="file" id="file" name="file" class="form-control">
                         		</div>
 
                     			</div>

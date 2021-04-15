@@ -42,7 +42,17 @@ $id = $_GET['id'];
 	 $result = mysqli_fetch_array($sql);
 	 $url="pdf/notes/".$result['notes_pdf'];
  }
+
+ else if($content == "papers")
+ {
+       $sql = mysqli_query($conn, "SELECT pdf FROM papers WHERE pdf='$id'");
+	   $result = mysqli_fetch_array($sql);
+	   $url="pdf/papers/".$result['pdf'].".pdf";
+       //echo $url;
+ }
+
 	 echo "<embed src='$url' style = 'margin-left: 10%;' width='1200' height='730' type='application/pdf'>"
+ 
 
    //echo $result['syllabus_pdf'];
 

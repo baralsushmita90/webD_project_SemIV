@@ -2,11 +2,18 @@
 
 include('db_conn.php');
 
-$id = $_GET['id'];
-$content=$_GET['content'];
+$code = $_GET['code'];
+$id=$_GET['id'];
 //echo $id.$content;
-$sql = "SELECT * FROM sem1_notes WHERE id = $id";
+$sql = "SELECT papers.title,pdf from papers,sem1_notes where sem1_notes.code = papers.code and id ='$id' and papers.code ='$code'";
 $result = $conn->query($sql);
+// if ($result->num_rows > 0){
+// 	echo "entries there";
+
+// }
+// else{
+// 	echo "No entries";
+// }
 // if(mysqli_num_rows($result)>0)
 // {
 // 		echo "<script>table.style.display=visible</script>";
@@ -26,7 +33,7 @@ $result = $conn->query($sql);
 <html>
 <head>
 
-	<title>MCA Notes</title>
+	<title>Question Papers</title>
 
 	<style>
 		table
@@ -62,37 +69,33 @@ $result = $conn->query($sql);
 <body>
 
 
-	<h1><center>SUBJECT LIST</center></h1>
+	<h1><center>PAPERS LIST</center></h1>
 	<br>
 	<div id="show-table" style="overflow-x:auto;margin-top: 5%;">
 	<table>
 	<tr>
-		<th>Subject Code</th>
-		<th>Subject Title</th>
+		
+		<th>PAPER TITLE</th>
+		<th> PDF </th>
 	</tr>
 
 	 <?php
+	 $content = "papers";
 	 while($rows=$result->fetch_assoc())
     {
-	    $code = $rows['code'];
-			$title=$rows['title'];
-			if($content=="syllabus")
-			 $url="content_display.php?id=".$code."& content=syllabus";
+	        $title = $rows['title'];
+			$pdf=$rows['pdf'];
 
-      else if($content=="books")
-       $url="content_display.php?id=".$code."& content=books";
-
-			else if($content=="notes")
-			  $url="content_display.php?id=".$code."& content=notes";
-
-			else if($content == "papers")
-				$url = "table_papers.php?code=$code&id=$id";
+			
+			$url = "content_display.php?id=$pdf&content=$content";
 
 
 			 echo "<tr>";
-			 echo "<td>$code </td>";
+			 echo "<td>$title</td>";
 			 echo "<td><a href='$url'>$title</a></td>";
 	  }
+	
+	
 
 		?>
  	</table>
