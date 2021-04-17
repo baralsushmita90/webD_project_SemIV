@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 	<title>MCA Notes</title>
 
 	<style>
-		table
+		/*table
 		{
 			width: 60%;
 			border: 1px solid black;
@@ -44,7 +44,39 @@ $result = $conn->query($sql);
   					border: 1px solid black;
   					border-collapse: collapse;
   					font-size: 20px;
-				}
+				}*/
+				.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
 
 		a
 		{
@@ -65,7 +97,8 @@ $result = $conn->query($sql);
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>
 	<div id="show-table" style="overflow-x:auto;margin-top: 5%;">
-	<table>
+	<center>
+	<table class="styled-table">
 	<tr>
 		<th>Subject Code</th>
 		<th>Subject Title</th>
@@ -89,13 +122,13 @@ $result = $conn->query($sql);
 				$url = "table_papers.php?code=$code&id=$id";
 
 
-			 echo "<tr>";
+			 echo "<tr class=active-row>";
 			 echo "<td>$code </td>";
 			 echo "<td><a href='$url'>$title</a></td>";
 	  }
 
 		?>
- 	</table>
+ 	</table></center>
  	</div>
 
 </body>
