@@ -26,73 +26,23 @@ $result = $conn->query($sql);
 <html>
 <head>
 
-	<title>MCA Notes</title>
 
-	<style>
-		/*table
-		{
-			width: 60%;
-			border: 1px solid black;
-			border-collapse: collapse;
-			margin-left: auto;
-  			margin-right: auto;
-		}
-
-		th, td {
-  					text-align: center;
-  					padding: 15px;
-  					border: 1px solid black;
-  					border-collapse: collapse;
-  					font-size: 20px;
-				}*/
-				.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-
-		a
-		{
-			text-decoration: none;
-		}
-
-		h1
-		{
-			margin-top: 5%;
-		}
-
-	</style>
+	<link rel="stylesheet" href="Css/tablestyle.css">
 
 </head>
 <body>
+	<div class="nav">
+		<ul>
+		 <li><a href="index.php">Home</a></li>
+		 <li><a href="about.html">Books</a></li>
+		 <li><a href="contact.html">Notes</a></li>
+		 <li><a href="contact.html">Previous Year </a></li>
+		 <li><a href="contact.html">Syllabus</a></li>
+		 <li><a href="contact.html">Practical</a></li>
+		 <li><a href="contact.html">Project Ideas</a></li>
+	 </ul>
 
+	</div>
 
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>
