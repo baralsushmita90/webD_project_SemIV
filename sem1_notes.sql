@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Apr 20, 2021 at 10:21 AM
+-- Generation Time: Apr 20, 2021 at 04:28 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -53,15 +53,15 @@ INSERT INTO `sem1_notes` (`id`, `code`, `title`, `notes_pdf`, `syllabus_pdf`, `b
 (2, 'CS-111', 'Database Management Systems', 'NA', 'dbms.pdf', 'Database-System-Concepts-Silberschatz.pdf'),
 (3, 'CS-112', 'Computer Networks', 'NA', 'cn.pdf', 'computer networks.pdf'),
 (2, 'CS-113', 'Microprocessors', 'NA', 'microprocessor.pdf', 'microprocessor ramesh-s-gaonkarpdf_compress.pdf'),
-(4, 'CS-114', 'Web Based Programming', 'NA', 'NA', 'NA'),
-(3, 'CS-115', 'Design and Analysis of Algorithms', 'NA', 'NA', 'Algo Cormen.pdf'),
-(4, 'CS-116', 'Computer Graphics', 'NA', 'NA', 'NA'),
-(5, 'CS-117', 'Parallel and Distributed Systems', 'NA', 'NA', 'NA'),
-(4, 'CS-118', 'Software Engineering', 'NA', 'NA', 'Software Engineering by Rajib.pdf'),
-(2, 'CS-119', 'Formal Languages and Automata Theory', 'NA', 'NA', 'Formal Language.pdf'),
-(4, 'CS-120', 'Artificial Intelligence', 'NA', 'NA', 'Aritifical Intelligence by Russel and Norvig.pdf'),
-(5, 'CS-148', 'Principles of Compiler Design', 'NA', 'NA', 'NA'),
-(4, 'CS-149', 'Software Testing', 'NA', 'NA', 'NA');
+(4, 'CS-114', 'Web Based Programming', 'NA', 'webd.pdf', 'NA'),
+(3, 'CS-115', 'Design and Analysis of Algorithms', 'NA', 'algos.pdf', 'Algo Cormen.pdf'),
+(4, 'CS-116', 'Computer Graphics', 'NA', 'computer_graphics.pdf', 'NA'),
+(5, 'CS-117', 'Parallel and Distributed Systems', 'NA', 'parallel_systems.pdf', 'NA'),
+(4, 'CS-118', 'Software Engineering', 'NA', 'software_engg.pdf', 'Software Engineering by Rajib.pdf'),
+(2, 'CS-119', 'Formal Languages and Automata Theory', 'NA', 'automata.pdf', 'Formal Language.pdf'),
+(4, 'CS-120', 'Artificial Intelligence', 'NA', 'ai.pdf', 'Aritifical Intelligence by Russel and Norvig.pdf'),
+(5, 'CS-148', 'Principles of Compiler Design', 'NA', 'compiler_design.pdf', 'NA'),
+(4, 'CS-149', 'Software Testing', 'NA', 'software_testing.pdf', 'NA');
 
 --
 -- Indexes for dumped tables

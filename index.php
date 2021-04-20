@@ -86,6 +86,7 @@ if (mail($email, $subject, $body, $headers)) {
 		a:hover
 		{
 			text-decoration: none;
+
 		}
 
 	</style>
@@ -138,7 +139,7 @@ if (mail($email, $subject, $body, $headers)) {
 				<!-- # Div for important notifications -->
 				<h3>IMPORTANT NOTICE/EVENTS</h3>
 
-				 <marquee direction = 'up', height = 80% scrolldelay="200">
+				 <marquee direction = 'up', height = 80% scrolldelay='200' onmouseover= 'this.stop();' onmouseout= 'this.start();'>
 				<ul>
           <?php
         	while($rows=$result->fetch_assoc())
@@ -147,9 +148,6 @@ if (mail($email, $subject, $body, $headers)) {
               $title=$rows['Title'];
 
               echo "<li><a href='$url'> $title</a></li>";
-
-
-
             }
 
           ?>
@@ -167,7 +165,7 @@ if (mail($email, $subject, $body, $headers)) {
 
             <div class="col-md-4" style="margin: 1% 0%;">
 
-							<div class="flip-card">
+							<div class="flip-card" id="notes-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/notes_img.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -201,7 +199,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 						<div class="col-md-4" style="margin: 1% 0%;">
 
-              <div class="flip-card">
+              <div class="flip-card" id="syllabus-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/syllabus.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -232,7 +230,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 						<div class="col-md-4" style="margin: 1% 0%;">
 
-              <div class="flip-card">
+              <div class="flip-card" id="project-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/project.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -252,7 +250,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 						<div class="col-md-4" style="margin: 1% 0%;">
 
-              <div class="flip-card">
+              <div class="flip-card" id="paper-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/previous_year.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -291,7 +289,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 						<div class="col-md-4" style="margin: 1% 0%;">
 
-              <div class="flip-card">
+              <div class="flip-card" id="books-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/books.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -320,7 +318,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 						<div class="col-md-4" style="margin: 1% 0%;">
 
-              <div class="flip-card">
+              <div class="flip-card" id="practical-card">
                   <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/practical.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -521,12 +519,13 @@ if (mail($email, $subject, $body, $headers)) {
 					<h4 id="abt-us">NAVIGATE</h4>
 					<br>
 
-					<ul style="list-style-type: none;">
-						<li class="navigate-items"><a href="#">Home</a></li>
-						<li class="navigate-items"><a href="#">Home</a></li>
-						<li class="navigate-items"><a href="#">Home</a></li>
-						<li class="navigate-items"><a href="#">Home</a></li>
-						<li class="navigate-items"><a href="#">Home</a></li>
+					<ul style="list-style-type: none;margin-top: -6%;">
+						<li class="navigate-items"><a href="#notes-card">Notes</a></li>
+						<li class="navigate-items"><a href="#syllabus-card">Syllabus</a></li>
+						<li class="navigate-items"><a href="#project-card">Project Ideas</a></li>
+						<li class="navigate-items"><a href="#paper-card">Previous Years</a></li>
+						<li class="navigate-items"><a href="#books-card">Books</a></li>
+            <li class="navigate-items"><a href="#practical-card">Practicals</a></li>
 					</ul>
 				</div>
 

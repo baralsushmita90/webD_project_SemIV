@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 </head>
 <body>
 	<div class="nav">
-		<ul>
+		<!-- <ul>
 		 <li><a href="index.php">Home</a></li>
 		 <li><a href="about.html">Books</a></li>
 		 <li><a href="contact.html">Notes</a></li>
@@ -40,7 +40,9 @@ $result = $conn->query($sql);
 		 <li><a href="contact.html">Syllabus</a></li>
 		 <li><a href="contact.html">Practical</a></li>
 		 <li><a href="contact.html">Project Ideas</a></li>
-	 </ul>
+	 </ul> -->
+
+	 <h1>STUDYMATE</h1>
 
 	</div>
 
