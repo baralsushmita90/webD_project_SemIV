@@ -43,10 +43,19 @@ margin-top: 5%;
 }
 
 .nav{
-    font-size: 20px;
+    
+    background-color: #5F9EA0;
+    margin-top: -4%;
 }
 
-ul {
+.nav h1
+{
+  text-align: center;
+  color: white;
+  padding: 12px 0px;
+}
+
+/*ul {
 
   list-style-type: none;
   margin: 0;
@@ -57,6 +66,7 @@ ul {
 
 li {
   float: left;
+  margin: 12px 0px;
 }
 
 li a {
@@ -65,9 +75,9 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+}*/
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
+/*li a:hover {
+  color: #111;
+}*/
