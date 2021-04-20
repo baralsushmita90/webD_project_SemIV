@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Apr 15, 2021 at 02:25 PM
+-- Generation Time: Apr 20, 2021 at 10:21 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -45,14 +45,14 @@ INSERT INTO `sem1_notes` (`id`, `code`, `title`, `notes_pdf`, `syllabus_pdf`, `b
 (1, 'CS-102', 'Discrete Mathematics', 'NA', 'discrete_mathematics.pdf', 'NA'),
 (1, 'CS-103', 'Numerical Computing', 'numerical_methods.pdf', 'numerical_computing.pdf', 'Numerical Computing MK Jain.pdf'),
 (1, 'CS-104', 'Programming using C', 'C.pdf', 'programming_using_c.pdf', 'Dennis Ritche C Prog.pdf'),
-(2, 'CS-105', 'Probability and Statistics', 'NA', 'NA', 'NA'),
-(3, 'CS-106', 'Computer Architecture', 'NA', 'NA', 'Morris Mano CSA.pdf'),
-(2, 'CS-107', 'Data Structures', 'NA', 'NA', 'NA'),
-(3, 'CS-109', 'Object Oriented Programming', 'NA', 'NA', 'NA'),
-(3, 'CS-110', 'Operating Systems', 'NA', 'NA', 'Operating_System Galvin.pdf'),
-(2, 'CS-111', 'Database Management Systems', 'NA', 'NA', 'Database-System-Concepts-Silberschatz.pdf'),
-(3, 'CS-112', 'Computer Networks', 'NA', 'NA', 'computer networks.pdf'),
-(2, 'CS-113', 'Microprocessors', 'NA', 'NA', 'microprocessor ramesh-s-gaonkarpdf_compress.pdf'),
+(2, 'CS-105', 'Probability and Statistics', 'NA', 'probability.pdf', 'NA'),
+(3, 'CS-106', 'Computer Architecture', 'NA', 'comp_architecture.pdf', 'Morris Mano CSA.pdf'),
+(2, 'CS-107', 'Data Structures', 'NA', 'data_structures.pdf', 'NA'),
+(3, 'CS-109', 'Object Oriented Programming', 'NA', 'oops.pdf', 'NA'),
+(3, 'CS-110', 'Operating Systems', 'NA', 'os.pdf', 'Operating_System Galvin.pdf'),
+(2, 'CS-111', 'Database Management Systems', 'NA', 'dbms.pdf', 'Database-System-Concepts-Silberschatz.pdf'),
+(3, 'CS-112', 'Computer Networks', 'NA', 'cn.pdf', 'computer networks.pdf'),
+(2, 'CS-113', 'Microprocessors', 'NA', 'microprocessor.pdf', 'microprocessor ramesh-s-gaonkarpdf_compress.pdf'),
 (4, 'CS-114', 'Web Based Programming', 'NA', 'NA', 'NA'),
 (3, 'CS-115', 'Design and Analysis of Algorithms', 'NA', 'NA', 'Algo Cormen.pdf'),
 (4, 'CS-116', 'Computer Graphics', 'NA', 'NA', 'NA'),
