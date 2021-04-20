@@ -46,7 +46,7 @@ $result = $conn->query($sql);
 
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>
-	<div id="show-table" style="overflow-x:auto;margin-top: 5%;">
+	<div id="show-table" style="overflow-x:auto;margin-top: 0%;">
 	<center>
 	<table class="styled-table">
 	<tr>

@@ -7,6 +7,11 @@ $id=$_GET['id'];
 //echo $id.$content;
 $sql = "SELECT papers.title,pdf from papers,sem1_notes where sem1_notes.code = papers.code and id ='$id' and papers.code ='$code'";
 $result = $conn->query($sql);
+if($result->num_rows==0)
+{
+	echo "<h1>Sorry! No Papers found</h2>";
+}
+
 // if ($result->num_rows > 0){
 // 	echo "entries there";
 
@@ -38,10 +43,10 @@ $result = $conn->query($sql);
 </head>
 <body>
 
-
+    
 	<h1><center>PAPERS LIST</center></h1>
 	<br>
-	<div id="show-table" style="overflow-x:auto;margin-top: 5%;">
+	<div id="show-table" style="overflow-x:auto;margin-top: 0%;">
 	<center>
 	<table class="styled-table">
 	<tr>
