@@ -159,8 +159,10 @@ if (mail($email, $subject, $body, $headers)) {
 
 			<div class="col-md-8">
 
-				<div class="container-fluid" style="height: 100%;width: 1000px; margin: 0px 0px;">
+				<div class="container-fluid" style="height: 100%;width: 1000px; ">
 
+<br>
+<br>
 					<div class="row" style="height: 50%;width: 1000px;">
 
             <div class="col-md-4" style="margin: 1% 0%;">
@@ -248,7 +250,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 					<div class="row" style="height: 50%;width: 1000px;">
 
-						<div class="col-md-4" style="margin: 1% 0%;">
+						<div class="col-md-4" >
 
               <div class="flip-card" id="paper-card">
                   <div class="flip-card-inner">
@@ -275,19 +277,14 @@ if (mail($email, $subject, $body, $headers)) {
 
                            }
                         ?>
-                        <!-- <h4><a href="semI_notes.php?id=1"> Sem I </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem II </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem III </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem IV</a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem V </a></h4>
-                        <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4> -->
+
                   </div>
                   </div>
               </div>
 
 						</div>
 
-						<div class="col-md-4" style="margin: 1% 0%;">
+						<div class="col-md-4" >
 
               <div class="flip-card" id="books-card">
                   <div class="flip-card-inner">
@@ -316,10 +313,11 @@ if (mail($email, $subject, $body, $headers)) {
 
 						</div>
 
-						<div class="col-md-4" style="margin: 1% 0%;">
+
+					<div class="col-md-4" >
 
               <div class="flip-card" id="practical-card">
-                  <div class="flip-card-inner">
+                <!--  <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="images/practical.jpg" alt="Avatar" style="width:100%;height:100%;">
                               <h1>Practical</h1>
@@ -334,7 +332,7 @@ if (mail($email, $subject, $body, $headers)) {
                         <h4><a href="semI_notes.php?id=1"> Sem VI </a></h4>
                   </div>
                   </div>
-              </div>
+              </div>-->
 
 						</div>
 
@@ -342,7 +340,7 @@ if (mail($email, $subject, $body, $headers)) {
 
 				</div>
 
-<!--                    <div class="grid-container">
+      <!--           <div class="grid-container">
                    	<div class="grid-item item-1">
                    		<div class="flip-card">
   <div class="flip-card-inner">

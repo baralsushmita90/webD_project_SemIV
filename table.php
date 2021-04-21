@@ -42,7 +42,7 @@ $result = $conn->query($sql);
 		 <li><a href="contact.html">Project Ideas</a></li>
 	 </ul> -->
 
-	 <h1>STUDYMATE</h1>
+	 <h1 >STUDYMATE</h1>
 
 	</div>
 
