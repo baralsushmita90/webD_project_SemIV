@@ -3,6 +3,23 @@
 include('db_conn.php');
 
 $id = $_GET['id'];
+$content=$_GET['content'];
+
+if($content=="notes")
+{
+	$sql = "SELECT * FROM sem1_notes WHERE code='$id'";
+	$result = $conn->query($sql);
+	while($rows=$result->fetch_assoc())
+	{
+		$var = $rows['notes_pdf'];
+		if($var=='NA')
+		{
+			echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
+			echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+		}
+	}
+	
+}
 // echo $id;
  // $sql = "SELECT pdf_link FROM sem1_notes WHERE code = $id";
  // $result = $conn->query($sql);
@@ -21,7 +38,8 @@ $id = $_GET['id'];
 	<?php
 
 	$id = $_GET['id'];
-  $content=$_GET['content'];
+  	$content=$_GET['content'];
+  	$url="";
 
   if($content=="syllabus")
 	{
