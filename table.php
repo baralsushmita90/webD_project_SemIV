@@ -51,6 +51,7 @@ $result = $conn->query($sql);
 	<div id="show-table" style="overflow-x:auto;margin-top: 0%;">
 	<center>
 	<table class="styled-table">
+	
 	<tr>
 		<th>Subject Code</th>
 		<th>Subject Title</th>
