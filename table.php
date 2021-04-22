@@ -31,8 +31,10 @@ $result = $conn->query($sql);
 
 </head>
 <body>
-<!--	<div class="nav" style="background-color: #5F9EA0;margin-top: -4%;">
-		 <ul>
+	
+
+	<div style="background-color: #5F9EA0;margin-top: -4%;">
+		 <!-- <ul>
 		 <li><a href="index.php">Home</a></li>
 		 <li><a href="about.html">Books</a></li>
 		 <li><a href="contact.html">Notes</a></li>
@@ -40,11 +42,10 @@ $result = $conn->query($sql);
 		 <li><a href="contact.html">Syllabus</a></li>
 		 <li><a href="contact.html">Practical</a></li>
 		 <li><a href="contact.html">Project Ideas</a></li>
-	 </ul> -->
+	 </ul>  -->
+	<h1 style="text-align: center;color: white;padding: 12px 0px;">STUDYMATE</h1>
 
-<!--	 <h1 >STUDYMATE</h1>
-
- </div> -->
+ </div>
 
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>

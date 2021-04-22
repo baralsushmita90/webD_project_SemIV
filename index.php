@@ -239,7 +239,7 @@ if (mail($email, $subject, $body, $headers)) {
                               <h1>Project Ideas</h1>
                         </div>
                   <div class="flip-card-back">
-                          <br><br><br><br><br>
+                          <br><br><br><br>
                         <h4><a href="project_ideas.php">Click to view projects</a></h4>
                   </div>
                   </div>
