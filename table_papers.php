@@ -9,7 +9,8 @@ $sql = "SELECT papers.title,pdf from papers,sem1_notes where sem1_notes.code = p
 $result = $conn->query($sql);
 if($result->num_rows==0)
 {
-	echo "<h1>Sorry! No Papers found</h2>";
+	echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
+	echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
 }
 
 // if ($result->num_rows > 0){
@@ -43,18 +44,30 @@ if($result->num_rows==0)
 </head>
 <body>
 
-    
-	<h1><center>PAPERS LIST</center></h1>
+    <?php
+    if($result->num_rows>0)
+    {
+    	echo"<h1><center>PAPERS LIST</center></h1>";
+    }
+
+	
+	?>
 	<br>
 	<div id="show-table" style="overflow-x:auto;margin-top: 0%;">
 	<center>
 	<table class="styled-table">
-	<tr>
+	<?php
+	   if($result->num_rows>0)
+	   {
+	   	echo"<tr>";
 
-		<th>PAPER TITLE</th>
-		<th> PDF </th>
-	</tr>
+		echo"<th>PAPER TITLE</th>";
+		echo"<th> PDF </th>";
+	    echo"</tr>";
 
+	   }
+	    
+      ?>
 	 <?php
 	 $content = "papers";
 	 while($rows=$result->fetch_assoc())
