@@ -27,12 +27,12 @@ $result = $conn->query($sql);
 <head>
 
 
-	<link rel="stylesheet" href="Css/tablestyle.css">
+	<link rel="stylesheet" href="Css/tablestyle_new.css">
 
 </head>
 <body>
-	<div class="nav">
-		<!-- <ul>
+<!--	<div class="nav" style="background-color: #5F9EA0;margin-top: -4%;">
+		 <ul>
 		 <li><a href="index.php">Home</a></li>
 		 <li><a href="about.html">Books</a></li>
 		 <li><a href="contact.html">Notes</a></li>
@@ -42,16 +42,16 @@ $result = $conn->query($sql);
 		 <li><a href="contact.html">Project Ideas</a></li>
 	 </ul> -->
 
-	 <h1 >STUDYMATE</h1>
+<!--	 <h1 >STUDYMATE</h1>
 
-	</div>
+ </div> -->
 
 	<h1><center>SUBJECT LIST</center></h1>
 	<br>
 	<div id="show-table" style="overflow-x:auto;margin-top: 0%;">
 	<center>
 	<table class="styled-table">
-	
+
 	<tr>
 		<th>Subject Code</th>
 		<th>Subject Title</th>
