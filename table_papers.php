@@ -9,8 +9,9 @@ $sql = "SELECT papers.title,pdf from papers,sem1_notes where sem1_notes.code = p
 $result = $conn->query($sql);
 if($result->num_rows==0)
 {
-	echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
-	echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+	// echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
+	// echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+	echo "<script> window.location.href = 'error.php';</script>";
 }
 
 // if ($result->num_rows > 0){

@@ -35,11 +35,11 @@ $result = $conn->query($sql);
 
  		if(mysqli_query($conn, $sql))
  		{
- 			 echo "values inserted successfully";
+ 			 //echo "values inserted successfully";
  		}
  		else
  		{
- 			 echo "values not inserted successfully";
+ 			// echo "values not inserted successfully";
        $error =mysqli_error($conn);
        echo $error;
  		}
@@ -49,9 +49,9 @@ $result = $conn->query($sql);
     $headers = "From: STUDYMATE";
 
 if (mail($email, $subject, $body, $headers)) {
-    echo "Email successfully sent to $email...";
+    //echo "Email successfully sent to $email...";
 } else {
-    echo "Email sending failed...";
+    //echo "Email sending failed...";
 }
 
  	}
@@ -73,9 +73,9 @@ if (mail($email, $subject, $body, $headers)) {
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -550,7 +550,7 @@ if (mail($email, $subject, $body, $headers)) {
       					<!-- Modal content-->
       					<div class="modal-content">
         					<div class="modal-header">
-           						<h4 class="modal-title">CONTACT FORM</h4>
+           						<h4 class="modal-title">SHARE WITH US</h4>
           						<button type="button" class="close" data-dismiss="modal">&times;</button>
         					</div>
         				<div class="modal-body">
@@ -617,7 +617,7 @@ if (mail($email, $subject, $body, $headers)) {
 					</div>
 
 
-					<p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+					<p>Do you have any questions? Please do not hesitate to contact us directly on <span style="color:blue;">scss_123@jnu.ac.in</span>. Our team will come back to you within a matter of hours to help you.</p>
 
 				</div>
 

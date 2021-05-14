@@ -14,8 +14,26 @@ if($content=="notes")
 		$var = $rows['notes_pdf'];
 		if($var=='NA')
 		{
-			echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
-			echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+			// echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
+			// echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+			echo "<script> window.location.href = 'error.php';</script>";
+		}
+	}
+	
+}
+
+if($content=="books")
+{
+	$sql = "SELECT * FROM sem1_notes WHERE code='$id'";
+	$result = $conn->query($sql);
+	while($rows=$result->fetch_assoc())
+	{
+		$var = $rows['books_pdf'];
+		if($var=='NA')
+		{
+			// echo "<center><h1 style=color:#2980B9;margin-top:3%;font-size:40px;>Oops! No Results Found</h1><center>";
+			// echo"<img src=images/try.gif alt=Sorry style='height:70%;width:50%;'>";
+			echo "<script> window.location.href = 'error.php';</script>";
 		}
 	}
 	
@@ -52,7 +70,6 @@ if($content=="notes")
 	 $sql = mysqli_query($conn, "SELECT books_pdf FROM sem1_notes WHERE code='$id'");
 	 $result = mysqli_fetch_array($sql);
 	 $url="pdf/books/".$result['books_pdf'];
-
  }
  else if($content=="notes")
  {
