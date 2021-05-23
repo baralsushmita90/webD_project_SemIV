@@ -1,5 +1,21 @@
 <?php
+
 include('db_conn.php');
+//start the session
+session_start();
+date_default_timezone_set('Asia/Kolkata');
+
+$_SESSION['userID'] = rand(1,1000);
+$_SESSION['date_of_visit'] = date("Y-m-d");
+$_SESSION['login_time'] = date("h:i:s");
+// print_r($_SESSION);
+$userid = $_SESSION['userID'];
+$date = $_SESSION['date_of_visit'];
+$time = $_SESSION['login_time'];
+
+$sql = "INSERT INTO user VALUES('$userid','$date','$time')";
+$result = $conn->query($sql);
+
 $sql = "SELECT * FROM notifications";
 $result = $conn->query($sql);
 
@@ -73,9 +89,9 @@ if (mail($email, $subject, $body, $headers)) {
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -538,7 +554,8 @@ if (mail($email, $subject, $body, $headers)) {
 						<div class="col-md-4" style="height: 60px;"></div>
 
 						<div class="col-md-4">
-						<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">CONTACT US
+						
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">SHARE WITH US
 							<i class="fa fa-handshake-o" aria-hidden="true"></i>
 						</button>
 						</div>
