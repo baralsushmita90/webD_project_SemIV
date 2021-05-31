@@ -18,3 +18,7 @@ This project is active on Github pages: https://riyagoel192.github.io/webD_proje
 
    https://www.businessinsider.com/how-to-embed-google-map?IR=T
    
+# CONTRIBUTERS
+1. MEGHNA JUYAL
+2. SUSHMITA BARAL
+3. RIYA GOEL
